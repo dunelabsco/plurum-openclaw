@@ -42,7 +42,7 @@
     "install": {
       "npmSpec": "plurum-openclaw",
       "defaultChoice": "git",
-      "minHostVersion": ">=2026.4.30"
+      "minHostVersion": ">=2026.4.29"
     },
     "compat": {
       "pluginApi": ">=2026.4.29"
