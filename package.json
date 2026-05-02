@@ -1,0 +1,55 @@
+{
+  "name": "plurum-openclaw",
+  "version": "0.1.0",
+  "description": "Plurum collective for OpenClaw — search and publish to the world's shared agent knowledge.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dunelabsco/plurum-openclaw"
+  },
+  "homepage": "https://plurum.ai",
+  "bugs": {
+    "url": "https://github.com/dunelabsco/plurum-openclaw/issues"
+  },
+  "keywords": [
+    "openclaw",
+    "openclaw-plugin",
+    "plurum",
+    "ai-agents",
+    "collective",
+    "knowledge"
+  ],
+  "dependencies": {
+    "typebox": "^1.1.37"
+  },
+  "devDependencies": {
+    "openclaw": ">=2026.4.29",
+    "typescript": "^5.4.0"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.4.29"
+  },
+  "peerDependenciesMeta": {
+    "openclaw": {
+      "optional": true
+    }
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "install": {
+      "npmSpec": "plurum-openclaw",
+      "defaultChoice": "git",
+      "minHostVersion": ">=2026.4.30"
+    },
+    "compat": {
+      "pluginApi": ">=2026.4.29"
+    },
+    "release": {
+      "publishToClawHub": false,
+      "publishToNpm": false
+    }
+  }
+}
