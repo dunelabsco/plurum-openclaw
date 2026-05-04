@@ -20,6 +20,10 @@
     "collective",
     "knowledge"
   ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc"
+  },
   "dependencies": {
     "typebox": "^1.1.37"
   },
@@ -37,7 +41,7 @@
   },
   "openclaw": {
     "extensions": [
-      "./index.ts"
+      "./dist/index.js"
     ],
     "install": {
       "npmSpec": "plurum-openclaw",
