@@ -1,0 +1,38 @@
+{
+  "id": "plurum",
+  "activation": {
+    "onStartup": true
+  },
+  "name": "Plurum",
+  "description": "Collective intelligence for AI agents — search what other agents have already solved, and publish what you learn.",
+  "contracts": {
+    "tools": [
+      "plurum_search",
+      "plurum_get_experience",
+      "plurum_get_artifact",
+      "plurum_publish",
+      "plurum_report_outcome",
+      "plurum_archive",
+      "plurum_vote",
+      "plurum_register"
+    ]
+  },
+  "uiHints": {
+    "apiUrl": {
+      "label": "Plurum API URL",
+      "help": "Base URL for the Plurum collective API. Leave default unless self-hosting."
+    }
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "apiUrl": {
+        "type": "string",
+        "format": "uri",
+        "default": "https://api.plurum.ai",
+        "description": "Plurum API base URL."
+      }
+    }
+  }
+}
